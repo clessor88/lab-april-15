@@ -9,6 +9,8 @@ function sum(x,y){
 function multiply(x,y){
   var result = x * y;
 //  console.log('"The product of ' + x + ' and ' + y + ' is ' + result + '."');
+  var probTwo = document.getElementById('multiThing');
+  probTwo.textContent = '"The product of ' + x + ' and ' + y + ' is ' + result + '."';
   return x * y;
 }
 
@@ -18,6 +20,10 @@ function sumAndMultiply(x, y, z) {
   output.push(multiply(multiply(x,y),z));
   console.log(x + ' and ' + y + ' and ' + z + ' sum to ' + output[0] + '.');
   console.log('The numbers ' + x + ' and ' + y + ' and ' + z + ' have a product of ' + output[1] + '.');
+  var probThree = document.getElementById('partOne');
+  probThree.textContent = x + ' and ' + y + ' and ' + z + ' sum to ' + output[0] + '.';
+  var partTwo = document.getElementById('partTwo');
+  partTwo.textContent = 'The numbers ' + x + ' and ' + y + ' and ' + z + ' have a product of ' + output[1] + '.';
   return output;
 }
 
@@ -28,6 +34,8 @@ function sumArray(arr){
   }
   console.log('"' + arr + ' was passed as an array of numbers, and ' + sum + ' is their sum."');
   console.table(arr);
+  var probFour = document.getElementById('arrayOne');
+  probFour.textContent = '"' + arr + ' was passed as an array of numbers, and ' + sum + ' is their sum."';
 }
 
 function multiplyArray(arr){
@@ -37,4 +45,6 @@ function multiplyArray(arr){
   }
   console.log('"The numbers ' + arr + ' have a product of ' + product + '."');
   console.table(arr);
+  var probFive = document.getElementById('arrayTwo');
+  probFive.textcontent = '"The numbers ' + arr + ' have a product of ' + product + '."';
 }
