@@ -1,6 +1,8 @@
 function sum(x,y){
   var result = x + y;
 //  console.log('"The sum of ' + x + ' and ' + y + ' is ' + result + '."');
+  var probOne = document.getElementById('sumThing');
+  probOne.textContent = '"The sum of ' + x + ' and ' + y + ' is ' + result + '."';
   return x + y;
 }
 
@@ -24,6 +26,15 @@ function sumArray(arr){
   for (var i = 0; i < arr.length; i++){
     sum += arr[i];
   }
-  console.log('"' + arr + 'was passed as an array of numbers, and ' + sum + ' is their sum."');
+  console.log('"' + arr + ' was passed as an array of numbers, and ' + sum + ' is their sum."');
+  console.table(arr);
+}
+
+function multiplyArray(arr){
+  var product = 1;
+  for (var i = 0; i < arr.length; i++){
+    product *= arr[i];
+  }
+  console.log('"The numbers ' + arr + ' have a product of ' + product + '."');
   console.table(arr);
 }
