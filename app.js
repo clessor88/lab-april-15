@@ -26,7 +26,7 @@ function sumAndMultiply(x, y, z) {
   partTwo.textContent = 'The numbers ' + x + ' and ' + y + ' and ' + z + ' have a product of ' + output[1] + '.';
   return output;
 }
-
+//Really good code.
 function sumArray(arr){
   var sum = 0;
   for (var i = 0; i < arr.length; i++){
@@ -37,7 +37,7 @@ function sumArray(arr){
   var probFour = document.getElementById('arrayOne');
   probFour.textContent = '"' + arr + ' was passed as an array of numbers, and ' + sum + ' is their sum."';
 }
-
+//I have the same code
 function multiplyArray(arr){
   var product = 1;
   for (var i = 0; i < arr.length; i++){
